@@ -1,0 +1,15 @@
+
+CreateStudents/.vs/CreateStudents/v16/.suo
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+*.json
+*.dll
+*.exe
+*.pdb
+*.cache
+*.props
+*.targets
+CreateStudents/CreateStudents/obj/Debug/netcoreapp3.0/CreateStudents.csproj.FileListAbsolute.txt
+CreateStudents/CreateStudents/obj/Debug/netcoreapp3.0/CreateStudents.AssemblyInfo.cs
