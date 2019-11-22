@@ -5,7 +5,7 @@ C# Programming Chapter 9
 - [X] Guided - CreateStudents
 - [X] Guided - CreateStudents2
 - [X] 02 - TestClassifiedAd
-- [ ] 04 - TilingDemo
+- [X] 04 - TilingDemo
 - [ ] 06 - ~~TaxPayerDemo & TaxPayerDemo2~~
 - [ ] 08 - ConferencesDemo
 - [ ] 10 - DemoJobs
