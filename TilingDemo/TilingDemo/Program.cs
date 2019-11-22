@@ -9,4 +9,9 @@ namespace TilingDemo
             Console.WriteLine("Hello World!");
         }
     }
+    class Room
+    {
+        public double length { get; set; }
+        public double width { get; set; }
+    }
 }
