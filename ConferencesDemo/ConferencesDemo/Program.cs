@@ -8,6 +8,9 @@ namespace ConferencesDemo
         {
             Conference[] conferences = GetConferences(5);
             DisplayConferences(conferences);
+            Array.Sort(conferences);
+            Console.WriteLine("Sorted Conferences: ");
+            DisplayConferences(conferences);
         }
         private static void DisplayConferences(Conference[] arr)
         {
