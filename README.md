@@ -7,5 +7,5 @@ C# Programming Chapter 9
 - [X] 02 - TestClassifiedAd
 - [X] 04 - TilingDemo
 - [ ] 06 - ~~TaxPayerDemo & TaxPayerDemo2~~
-- [ ] 08 - ConferencesDemo
+- [X] 08 - ConferencesDemo
 - [ ] 10 - DemoJobs

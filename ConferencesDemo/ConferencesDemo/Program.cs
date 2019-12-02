@@ -9,15 +9,15 @@ namespace ConferencesDemo
             Conference[] conferences = GetConferences(5);
             DisplayConferences(conferences);
             Array.Sort(conferences);
-            Console.WriteLine("Sorted Conferences: ");
+            Console.WriteLine("{0}Sorted Conferences: {0}", Environment.NewLine);
             DisplayConferences(conferences);
         }
         private static void DisplayConferences(Conference[] arr)
         {
             for (int i = 0; i < arr.Length; ++i)
             {
-                Console.WriteLine("Conference {0}: ", i);
-                Console.WriteLine("\tName: {0}, Date: {1}, Attendees: {2}", arr[i].Name, arr[i].Date, arr[i].Attendees);
+                Console.WriteLine("Conference {0}: ", arr[i].Name);
+                Console.WriteLine("\tDate: {1}, Attendees: {2}", arr[i].Name, arr[i].Date, arr[i].Attendees);
             }
         }
         private static Conference[] GetConferences(int count)
