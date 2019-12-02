@@ -17,7 +17,7 @@ namespace ConferencesDemo
             for (int i = 0; i < arr.Length; ++i)
             {
                 Console.WriteLine("Conference {0}: ", arr[i].Name);
-                Console.WriteLine("\tDate: {1}, Attendees: {2}", arr[i].Name, arr[i].Date, arr[i].Attendees);
+                Console.WriteLine("\tDate: {0}, Attendees: {1}", arr[i].Date, arr[i].Attendees);
             }
         }
         private static Conference[] GetConferences(int count)
