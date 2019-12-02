@@ -25,11 +25,23 @@ namespace ConferencesDemo
                 string name = Console.ReadLine();
                 Console.Write("Date of conference {0}: ", i);
                 string date = Console.ReadLine();
-                Console.Write("Attendees of conference {0}: ", i);
+                Console.WriteLine("Attendees of conference {0}: ", i);
                 int attendees = GetAttendees();
                 conferenceArray[i] = new Conference(name, date, attendees);
             }
             return conferenceArray;
+        }
+
+        private static int GetAttendees()
+        {
+            bool tmp = false;
+            int attendees = 0;
+            while(!tmp)
+            {
+                Console.Write("\tEnter a valid number");
+                tmp = int.TryParse(Console.ReadLine(), out attendees);
+            }
+            return attendees;
         }
 
     }
