@@ -25,11 +25,12 @@ namespace ConferencesDemo
             Conference[] conferenceArray = new Conference[count];
             for (int i = 0; i < count; ++i)
             {
-                Console.Write("Name of conference {0}: ", i);
+                int j = i + 1;
+                Console.Write("Name of conference {0}: ", j);
                 string name = Console.ReadLine();
-                Console.Write("Date of conference {0}: ", i);
+                Console.Write("Date of conference {0}: ", j);
                 string date = Console.ReadLine();
-                Console.WriteLine("Attendees of conference {0}: ", i);
+                Console.WriteLine("Attendees of conference {0}: ", j);
                 int attendees = GetAttendees();
                 conferenceArray[i] = new Conference(name, date, attendees);
             }
@@ -42,7 +43,7 @@ namespace ConferencesDemo
             int attendees = 0;
             while(!tmp)
             {
-                Console.Write("\tEnter a valid number");
+                Console.Write("\tEnter a valid number: ");
                 tmp = int.TryParse(Console.ReadLine(), out attendees);
             }
             return attendees;
