@@ -8,6 +8,29 @@ namespace DemoJobs
         {
             Console.WriteLine("Hello World!");
         }
+        private static void DisplayJobs(Job[] arr)
+        {
+            for (int i = 0; i < arr.Length; ++i)
+            {
+                Console.WriteLine("Job {0}: ", arr[i].Description);
+                Console.WriteLine("\tTime: {0}, Rate: {1}, Expected Fee: {2}, Returned Fee: {3} ", arr[i].Time, arr[i].Rate, (arr[i].Rate * arr[i].Time), arr[i].Fee);
+            }
+        }
+        private static Job[] GetJobs(int count)
+        {
+            Job[] jobArray = new Job[count];
+            string[] jobDescriptions = new string[] { "walking the dog", "painting the house", "patching the roof", "building a pool", "feeding the children", "watering the plants" };
+            Random rng = new Random();
+            for (int i = 0; i < count; ++i)
+            {
+                Job tmp = new Job();
+                tmp.Description = jobDescriptions[rng.Next(0, jobDescriptions.Length)];
+                tmp.Time = rng.Next(0, 50);
+                tmp.Rate = rng.Next(0, 50) + rng.NextDouble();
+                jobArray[i] = tmp;
+            }
+            return jobArray;
+        }
     }
 
     class Job
