@@ -8,4 +8,4 @@ C# Programming Chapter 9
 - [X] 04 - TilingDemo
 - [ ] 06 - ~~TaxPayerDemo & TaxPayerDemo2~~
 - [X] 08 - ConferencesDemo
-- [ ] 10 - DemoJobs
+- [X] 10 - DemoJobs

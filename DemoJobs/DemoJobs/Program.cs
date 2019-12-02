@@ -14,7 +14,7 @@ namespace DemoJobs
             for (int i = 0; i < arr.Length; ++i)
             {
                 Console.WriteLine("Job \"{0}:\" ", arr[i].Description);
-                Console.WriteLine("\tTime: {0}, Rate: {1}, Expected Fee: {2}, Returned Fee: {3} ", arr[i].Time, arr[i].Rate, (arr[i].Rate * arr[i].Time), arr[i].Fee);
+                Console.WriteLine("\tTime: {0}, Rate: {1}, Expected Fee: {2:F}, Returned Fee: {3:F} ", arr[i].Time, arr[i].Rate, (arr[i].Rate * arr[i].Time), arr[i].Fee);
             }
         }
         private static Job[] GetJobs(int count)
