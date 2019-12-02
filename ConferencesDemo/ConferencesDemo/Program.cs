@@ -8,6 +8,14 @@ namespace ConferencesDemo
         {
             Console.WriteLine("Hello World!");
         }
+        private static void DisplayConferences(Conference[] arr)
+        {
+            for (int i = 0; i < arr.Length; ++i)
+            {
+                Console.WriteLine("Conference {0}: ", i);
+                Console.WriteLine("\tName: {0}, Date: {1}, Attendees: {2}", arr[i].Name, arr[i].Date, arr[i].Attendees);
+            }
+        }
         private static Conference[] GetConferences(int count)
         {
             Conference[] conferenceArray = new Conference[count];
