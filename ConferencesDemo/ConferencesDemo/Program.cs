@@ -6,7 +6,8 @@ namespace ConferencesDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Conference[] conferences = GetConferences(5);
+            DisplayConferences(conferences);
         }
         private static void DisplayConferences(Conference[] arr)
         {
