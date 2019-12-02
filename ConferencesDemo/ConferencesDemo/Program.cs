@@ -8,6 +8,22 @@ namespace ConferencesDemo
         {
             Console.WriteLine("Hello World!");
         }
+        private static Conference[] GetConferences(int count)
+        {
+            Conference[] conferenceArray = new Conference[count];
+            for (int i = 0; i < count; ++i)
+            {
+                Console.Write("Name of conference {0}: ", i);
+                string name = Console.ReadLine();
+                Console.Write("Date of conference {0}: ", i);
+                string date = Console.ReadLine();
+                Console.Write("Attendees of conference {0}: ", i);
+                int attendees = GetAttendees();
+                conferenceArray[i] = new Conference(name, date, attendees);
+            }
+            return conferenceArray;
+        }
+
     }
     class Conference : IComparable
     {
