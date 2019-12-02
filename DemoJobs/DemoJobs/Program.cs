@@ -6,7 +6,8 @@ namespace DemoJobs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Job[] jobs = GetJobs(5);
+            DisplayJobs(jobs);
         }
         private static void DisplayJobs(Job[] arr)
         {
